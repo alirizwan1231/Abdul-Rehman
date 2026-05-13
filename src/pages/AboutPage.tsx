@@ -1,71 +1,119 @@
-import { CheckCircle, Award, Code, Users, Laptop } from 'lucide-react';
+import { CheckCircle, Award, Code, Users, Laptop, Search, Globe } from 'lucide-react';
 import SectionHeading from '../components/shared/SectionHeading';
 import profileImg from "../assets/profileimage-C0lMUnk9.jpeg";
+import aliProfileImg from "../assets/alirizwan.jpeg"; // Add Ali's image to your assets
 
 const AboutPage = () => {
   const skills = [
-    { name: 'WordPress Development', percentage: 95 },
-    { name: 'HTML/CSS', percentage: 90 },
-    { name: 'JavaScript/React', percentage: 85 },
-    { name: 'UI/UX Design', percentage: 88 },
-    { name: 'Responsive Design', percentage: 95 },
-    { name: 'SEO Optimization', percentage: 90 },
-    { name: 'Plugin Development', percentage: 85 },
-    { name: 'Theme Customization', percentage: 92 },
+    { name: 'SEO & Search Strategy', percentage: 98 },
+    { name: 'Technical SEO Audits', percentage: 95 },
+    { name: 'On-Page & Off-Page SEO', percentage: 96 },
+    { name: 'WordPress Development', percentage: 92 },
+    { name: 'HTML/CSS/JavaScript', percentage: 90 },
+    { name: 'Content Strategy', percentage: 88 },
+    { name: 'Analytics & Reporting', percentage: 90 },
+    { name: 'Local & E-commerce SEO', percentage: 94 },
   ];
 
   return (
     <>
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
-        {/* Background with gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-primary-50 to-secondary-50 opacity-80"></div>
         
-        {/* Animated background shapes */}
         <div className="absolute inset-0">
           <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-primary-200 rounded-full opacity-10 animate-pulse"></div>
           <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-secondary-200 rounded-full opacity-10 animate-pulse"></div>
         </div>
 
-        {/* Content */}
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-secondary-600 animate-slide-up">
-              About Me
+              About Us
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-6 animate-slide-up leading-relaxed" style={{ animationDelay: '0.1s' }}>
-              Crafting exceptional digital experiences through creative design and clean code
+              Driving organic growth through expert SEO strategy and powerful web development
             </p>
           </div>
         </div>
       </section>
 
-      {/* Biography Section */}
+      {/* Abdul Rehman - SEO Specialist */}
       <section className="section">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-2/5">
-           <img
-  src={profileImg}
-  alt="Profile"
-  className="rounded-lg shadow-xl"
-/>
+              <img
+                src={profileImg}
+                alt="Abdul Rehman - SEO Specialist"
+                className="rounded-lg shadow-xl"
+              />
             </div>
             <div className="lg:w-3/5">
               <SectionHeading 
-                subtitle="MY STORY"
+                subtitle="FOUNDER & SEO EXPERT"
                 title="Hi, I'm Abdul Rehman"
-                description="WordPress designer and front-end developer with a passion for creating beautiful, functional websites."
+                description="Certified SEO specialist and digital strategist with a passion for driving organic traffic and maximizing search visibility."
                 alignment="left"
               />
               <p className="text-gray-700 mb-6">
-                I'm a passionate WordPress designer from Pakistan, dedicated to building modern, responsive, and user-friendly websites. With strong skills in SEO, HTML, CSS, JavaScript, and React, I focus on creating fast, SEO-friendly sites that look great and perform even better.
+                I'm a results-driven SEO Specialist from Pakistan, dedicated to helping businesses dominate search rankings and grow their online presence. With deep expertise in technical SEO, keyword strategy, link building, and content optimization, I turn websites into high-performing organic traffic engines.
               </p>
               <p className="text-gray-700 mb-6">
-                My mission is to help clients build a powerful online presence through clean code and creative design. I approach each project with a focus on delivering websites that not only look stunning but also achieve business objectives through optimized performance and user experience.
+                My mission is to deliver measurable ROI through data-driven SEO strategies. Whether it's improving Core Web Vitals, conducting in-depth competitor analysis, or crafting content that ranks, I approach every project with precision and a focus on sustainable, long-term growth.
               </p>
               <p className="text-gray-700 mb-6">
-                Based in Bahawalnagar, Punjab, Pakistan, I work with clients worldwide to create impactful digital experiences that drive results.
+                Based in Bahawalnagar, Punjab, Pakistan, I collaborate with clients worldwide to unlock their full digital potential through search engine excellence.
+              </p>
+              <div className="flex flex-wrap gap-4 mt-8">
+                <a 
+                  href="https://github.com/alirizwan1231" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="btn-primary"
+                >
+                  GitHub Profile
+                </a>
+                <a 
+                  href="https://linkedin.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="btn-outline"
+                >
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partner Section - Ali Rizwan */}
+      <section className="section bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
+            <div className="lg:w-2/5">
+              <img
+                src={aliProfileImg}
+                alt="Ali Rizwan - Web Developer"
+                className="rounded-lg shadow-xl"
+              />
+            </div>
+            <div className="lg:w-3/5">
+              <SectionHeading 
+                subtitle="PARTNER & WEB DEVELOPER"
+                title="Ali Rizwan"
+                description="Full-stack web developer specializing in building fast, scalable, and SEO-friendly web applications."
+                alignment="left"
+              />
+              <p className="text-gray-700 mb-6">
+                Ali Rizwan is a skilled Web Developer who brings technical excellence to every project. With strong proficiency in React, Node.js, and modern web architectures, he transforms designs into high-performance digital experiences.
+              </p>
+              <p className="text-gray-700 mb-6">
+                His expertise spans front-end and back-end development, API integrations, database management, and deployment automation. Ali ensures that every website we deliver is not only visually stunning but also technically robust and optimized for speed.
+              </p>
+              <p className="text-gray-700 mb-6">
+                Together, we combine strategic SEO with cutting-edge development to create websites that rank higher, load faster, and convert better.
               </p>
               <div className="flex flex-wrap gap-4 mt-8">
                 <a 
@@ -91,12 +139,12 @@ const AboutPage = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="section bg-gray-50">
+      <section className="section">
         <div className="container mx-auto px-4">
           <SectionHeading 
-            subtitle="MY EXPERTISE"
+            subtitle="OUR EXPERTISE"
             title="Skills & Technologies"
-            description="A comprehensive range of technical skills and design expertise to bring your vision to life."
+            description="A powerful combination of SEO mastery and full-stack development to dominate the digital landscape."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 max-w-4xl mx-auto">
@@ -119,12 +167,12 @@ const AboutPage = () => {
       </section>
 
       {/* Experience Section */}
-      <section className="section">
+      <section className="section bg-gray-50">
         <div className="container mx-auto px-4">
           <SectionHeading 
-            subtitle="MY JOURNEY"
+            subtitle="OUR JOURNEY"
             title="Experience & Education"
-            description="My professional background and educational qualifications."
+            description="Our professional background and the qualifications that fuel our success."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -134,33 +182,49 @@ const AboutPage = () => {
               <div className="space-y-12">
                 <div className="relative pl-10 pb-8 border-l-2 border-primary-200">
                   <div className="absolute left-0 top-0 -translate-x-1/2 bg-primary-600 p-2 rounded-full">
-                    <Laptop className="text-white" size={16} />
+                    <Search className="text-white" size={16} />
                   </div>
                   <div className="mb-2">
                     <span className="inline-block px-3 py-1 bg-primary-100 text-primary-600 text-sm font-medium rounded-full mb-2">
                       2023 - Present
                     </span>
-                    <h4 className="text-xl font-semibold text-gray-900">WordPress Web Designer</h4>
-                    <p className="text-gray-600 italic">Freelance</p>
+                    <h4 className="text-xl font-semibold text-gray-900">Senior SEO Specialist</h4>
+                    <p className="text-gray-600 italic">Freelance / Agency Partner</p>
                   </div>
                   <p className="text-gray-700">
-                    Creating powerful WordPress websites for clients worldwide, focusing on custom solutions and optimal performance.
+                    Leading SEO strategy for diverse clients; achieving 300%+ organic traffic growth through technical audits, content optimization, and authority link building.
                   </p>
                 </div>
                 
+                <div className="relative pl-10 pb-8 border-l-2 border-primary-200">
+                  <div className="absolute left-0 top-0 -translate-x-1/2 bg-primary-600 p-2 rounded-full">
+                    <Globe className="text-white" size={16} />
+                  </div>
+                  <div className="mb-2">
+                    <span className="inline-block px-3 py-1 bg-primary-100 text-primary-600 text-sm font-medium rounded-full mb-2">
+                      2022 - 2024
+                    </span>
+                    <h4 className="text-xl font-semibold text-gray-900">Web Developer</h4>
+                    <p className="text-gray-600 italic">Ali Rizwan - Full-Stack Development</p>
+                  </div>
+                  <p className="text-gray-700">
+                    Building responsive, SEO-friendly web applications using React, Node.js, and modern CMS platforms with a focus on performance and scalability.
+                  </p>
+                </div>
+
                 <div className="relative pl-10">
                   <div className="absolute left-0 top-0 -translate-x-1/2 bg-primary-600 p-2 rounded-full">
                     <Code className="text-white" size={16} />
                   </div>
                   <div className="mb-2">
                     <span className="inline-block px-3 py-1 bg-primary-100 text-primary-600 text-sm font-medium rounded-full mb-2">
-                      2022 - 2024
+                      2021 - 2023
                     </span>
                     <h4 className="text-xl font-semibold text-gray-900">Front-End Developer</h4>
                     <p className="text-gray-600 italic">User-Focused Development</p>
                   </div>
                   <p className="text-gray-700">
-                    Developing responsive and user-friendly websites using modern front-end technologies.
+                    Developed responsive and user-friendly websites using modern front-end technologies with SEO best practices integrated from the ground up.
                   </p>
                 </div>
               </div>
@@ -178,14 +242,30 @@ const AboutPage = () => {
                     <span className="inline-block px-3 py-1 bg-secondary-100 text-secondary-600 text-sm font-medium rounded-full mb-2">
                       2023
                     </span>
-                    <h4 className="text-xl font-semibold text-gray-900">WordPress Development</h4>
-                    <p className="text-gray-600 italic">Udemy</p>
+                    <h4 className="text-xl font-semibold text-gray-900">Advanced SEO Certification</h4>
+                    <p className="text-gray-600 italic">Semrush / Moz Academy</p>
                   </div>
                   <p className="text-gray-700">
-                    Comprehensive training in WordPress development, theme customization, and plugin development.
+                    Mastered technical SEO, advanced keyword research, competitive analysis, and enterprise-level SEO strategy implementation.
                   </p>
                 </div>
                 
+                <div className="relative pl-10 pb-8 border-l-2 border-secondary-200">
+                  <div className="absolute left-0 top-0 -translate-x-1/2 bg-secondary-600 p-2 rounded-full">
+                    <Award className="text-white" size={16} />
+                  </div>
+                  <div className="mb-2">
+                    <span className="inline-block px-3 py-1 bg-secondary-100 text-secondary-600 text-sm font-medium rounded-full mb-2">
+                      2023
+                    </span>
+                    <h4 className="text-xl font-semibold text-gray-900">Full-Stack Web Development</h4>
+                    <p className="text-gray-600 italic">Udemy / FreeCodeCamp</p>
+                  </div>
+                  <p className="text-gray-700">
+                    Comprehensive training in MERN stack development, REST API design, and modern deployment pipelines.
+                  </p>
+                </div>
+
                 <div className="relative pl-10">
                   <div className="absolute left-0 top-0 -translate-x-1/2 bg-secondary-600 p-2 rounded-full">
                     <Award className="text-white" size={16} />
@@ -198,7 +278,7 @@ const AboutPage = () => {
                     <p className="text-gray-600 italic">Apna College</p>
                   </div>
                   <p className="text-gray-700">
-                    Focused on modern front-end development technologies and best practices.
+                    Focused on modern front-end development technologies, responsive design, and performance optimization.
                   </p>
                 </div>
               </div>
@@ -220,9 +300,9 @@ const AboutPage = () => {
             </div>
             <div className="lg:w-1/2">
               <SectionHeading 
-                subtitle="MY VALUES"
-                title="What I Believe In"
-                description="The core principles that guide my work and client relationships."
+                subtitle="OUR VALUES"
+                title="What We Believe In"
+                description="The core principles that guide our partnership and client relationships."
                 alignment="left"
               />
 
@@ -230,9 +310,9 @@ const AboutPage = () => {
                 <div className="flex">
                   <CheckCircle className="text-primary-600 mr-3 h-6 w-6 flex-shrink-0" />
                   <div>
-                    <h3 className="text-lg font-semibold">Quality First</h3>
+                    <h3 className="text-lg font-semibold">Data-Driven Results</h3>
                     <p className="text-gray-600">
-                      Delivering the highest quality work with attention to every detail.
+                      Every strategy is backed by analytics, keyword data, and measurable KPIs to ensure real growth.
                     </p>
                   </div>
                 </div>
@@ -240,9 +320,9 @@ const AboutPage = () => {
                 <div className="flex">
                   <CheckCircle className="text-primary-600 mr-3 h-6 w-6 flex-shrink-0" />
                   <div>
-                    <h3 className="text-lg font-semibold">Clear Communication</h3>
+                    <h3 className="text-lg font-semibold">Technical Excellence</h3>
                     <p className="text-gray-600">
-                      Maintaining transparent and regular communication throughout projects.
+                      Clean code, fast load times, and SEO-friendly architecture built into every project from day one.
                     </p>
                   </div>
                 </div>
@@ -250,9 +330,9 @@ const AboutPage = () => {
                 <div className="flex">
                   <CheckCircle className="text-primary-600 mr-3 h-6 w-6 flex-shrink-0" />
                   <div>
-                    <h3 className="text-lg font-semibold">Client Success</h3>
+                    <h3 className="text-lg font-semibold">Transparent Communication</h3>
                     <p className="text-gray-600">
-                      Focusing on solutions that drive real business results.
+                      Regular reporting, clear timelines, and honest updates throughout every project phase.
                     </p>
                   </div>
                 </div>
@@ -260,9 +340,9 @@ const AboutPage = () => {
                 <div className="flex">
                   <CheckCircle className="text-primary-600 mr-3 h-6 w-6 flex-shrink-0" />
                   <div>
-                    <h3 className="text-lg font-semibold">Continuous Learning</h3>
+                    <h3 className="text-lg font-semibold">Continuous Optimization</h3>
                     <p className="text-gray-600">
-                      Staying updated with the latest technologies and best practices.
+                      SEO is never "done." We constantly monitor, test, and refine strategies to stay ahead of algorithm changes.
                     </p>
                   </div>
                 </div>
