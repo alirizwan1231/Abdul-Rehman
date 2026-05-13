@@ -23,7 +23,7 @@ const Header = ({ isScrolled }: HeaderProps) => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center text-primary-600 font-bold text-xl">
             <Laptop className="mr-2" size={24} />
-            <span>Ali Rizwan</span>
+            <span>Abdul Rehman</span>
           </Link>
 
           {/* Desktop Navigation */}

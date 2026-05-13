@@ -303,25 +303,7 @@ const PortfolioPage = () => {
       </section>
 
       {/* Client Logos */}
-      <section className="section bg-gray-50">
-        <div className="container mx-auto px-4">
-          <SectionHeading 
-            subtitle="TRUSTED BY"
-            title="Clients I've Worked With"
-            description="Proud to have collaborated with these amazing businesses."
-          />
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
-            {[...Array(6)].map((_, i) => (
-              <div key={i} className="w-32 h-20 bg-white rounded-lg shadow-sm flex items-center justify-center p-4">
-                <div className="text-center text-lg font-bold text-gray-400">
-                  LOGO {i + 1}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+    
     </>
   );
 };

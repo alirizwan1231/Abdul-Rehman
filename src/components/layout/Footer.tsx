@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="col-span-1">
             <Link to="/" className="flex items-center text-white font-bold text-xl mb-4">
               <Laptop className="mr-2" size={24} />
-              <span>Ali Rizwan</span>
+              <span>Abdul Rehman</span>
             </Link>
             <p className="text-gray-300 mb-4">
               WordPress designer and front-end developer creating premium digital experiences for businesses worldwide.
@@ -84,7 +84,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Mail size={20} className="mr-3 text-primary-400" />
-                <a href="mailto:alis5597153@gmail.com" className="text-gray-300 hover:text-white transition-colors">alis5597153@gmail.com</a>
+                <a href="mailto: abdulrehmanfiaz12@gmail.com" className="text-gray-300 hover:text-white transition-colors"> abdulrehmanfiaz12@gmail.com</a>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 py-6 px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {currentYear} Ali Rizwan. All rights reserved.
+              &copy; {currentYear} Abdul Rehman. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>

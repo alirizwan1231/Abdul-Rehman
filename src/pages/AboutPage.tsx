@@ -1,6 +1,7 @@
 import { CheckCircle, Award, Code, Users, Laptop } from 'lucide-react';
 import SectionHeading from '../components/shared/SectionHeading';
-import profileImage from '../profileimage.png';
+
+
 const AboutPage = () => {
   const skills = [
     { name: 'WordPress Development', percentage: 95 },
@@ -45,15 +46,15 @@ const AboutPage = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-2/5">
               <img 
-                src={profileImage} 
-                alt="Ali Rizwan" 
+                 src="/src/pages/profileimage-C0lMUnk9.jpeg"
+                alt="Abdul Rehman" 
                 className="rounded-lg shadow-xl"
               />
             </div>
             <div className="lg:w-3/5">
               <SectionHeading 
                 subtitle="MY STORY"
-                title="Hi, I'm Ali Rizwan"
+                title="Hi, I'm Abdul Rehman"
                 description="WordPress designer and front-end developer with a passion for creating beautiful, functional websites."
                 alignment="left"
               />
