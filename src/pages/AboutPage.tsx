@@ -1,6 +1,6 @@
 import { CheckCircle, Award, Code, Users, Laptop } from 'lucide-react';
 import SectionHeading from '../components/shared/SectionHeading';
-
+import profileImg from "../assets/profileimage-C0lMUnk9.jpeg";
 
 const AboutPage = () => {
   const skills = [
@@ -45,11 +45,11 @@ const AboutPage = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-2/5">
-              <img 
-                 src="/src/assets/profileimage-C0lMUnk9.jpeg"
-                alt="Abdul Rehman" 
-                className="rounded-lg shadow-xl"
-              />
+             <img
+  src={profileImg}
+  alt="Profile"
+  className="rounded-lg shadow-xl"
+/>
             </div>
             <div className="lg:w-3/5">
               <SectionHeading 
