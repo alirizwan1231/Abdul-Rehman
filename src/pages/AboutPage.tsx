@@ -1,6 +1,6 @@
 import { CheckCircle, Award, Code, Users, Laptop, Search, Globe } from 'lucide-react';
 import SectionHeading from '../components/shared/SectionHeading';
-import profileImg from "../assets/profileimage-C0lMUnk9.jpeg";
+import profileImg from "../assets/profileimage.jpeg";
 import aliProfileImg from "../assets/alirizwan.jpeg"; // Add Ali's image to your assets
 
 const AboutPage = () => {
