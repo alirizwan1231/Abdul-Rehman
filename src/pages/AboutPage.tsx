@@ -1,6 +1,6 @@
 import { CheckCircle, Award, Code, Users, Laptop, Search, Globe } from 'lucide-react';
 import SectionHeading from '../components/shared/SectionHeading';
-
+import profileImg from "../assets/profileimage.jpeg";
 import aliProfileImg from "../assets/alirizwan.jpeg"; // Add Ali's image to your assets
 
 const AboutPage = () => {
@@ -43,7 +43,7 @@ const AboutPage = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-2/5">
-         
+            <img src="/profileimage.jpeg" alt="Profile" />
             </div>
             <div className="lg:w-3/5">
               <SectionHeading 
@@ -89,11 +89,8 @@ const AboutPage = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
             <div className="lg:w-2/5">
-              <img
-                src={aliProfileImg}
-                alt="Ali Rizwan - Web Developer"
-                className="rounded-lg shadow-xl"
-              />
+               <img src="/alirizwan.jpeg" alt="Profile" />
+        
             </div>
             <div className="lg:w-3/5">
               <SectionHeading 
