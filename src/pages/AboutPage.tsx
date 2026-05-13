@@ -46,7 +46,7 @@ const AboutPage = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-2/5">
               <img 
-                 src="/dist/assets/profileimage-C0lMUnk9.jpeg"
+                 src="/src/assets/profileimage-C0lMUnk9.jpeg"
                 alt="Abdul Rehman" 
                 className="rounded-lg shadow-xl"
               />
