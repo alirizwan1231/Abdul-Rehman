@@ -45,7 +45,7 @@ const AboutPage = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-2/5">
-             <img
+           <img
   src={profileImg}
   alt="Profile"
   className="rounded-lg shadow-xl"
